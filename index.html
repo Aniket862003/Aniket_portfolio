@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Ani<span>ket</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="./AniketResume.pdf" target="_blank" class="resume-btn">Resume</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-right">
+            <h1>Hi, I'm <span>Aniket Darekar</span></h1>
+            <h2 id="typing"></h2>
+            <p>Passionate Software Developer & Software Engineer with a focus on real-world solutions.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/Aniket862003" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/aniketdarekar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:aniket.862003@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <br>
+            <br>
+
+            <a class="btn" href="#projects">View Projects</a>
+        </div>
+
+        <div class="hero-img" data-aos="fade-left">
+            <img src="profile.jpg" alt="profile">
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-grid">
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+            <p>HTML</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+            <p>CSS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+            <p>JavaScript</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+            <p>React</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+            <p>Node.js</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
+            <p>Express.js</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+            <p>MongoDB</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="data:image/png;base64,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">
+            <p>GitHub</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="data:image/png;base64,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">
+            <p>AWS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+            <p>MySQL</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="data:image/jpeg;base64,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">
+            <p>python</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAABOFBMVEUAAAD/cmKiWf/yTh4Kz4MavP7+blv0UieYU+oJwnunUP8A1XnGQBjPXU/3UB5vl8sDOCQsGEb3TgAbwf//d2YK1IbFVLmSQjkbxP+nXP++PRcYreYK3IssDgX/UiAwFRLOQhnqa1wiCwToSx0cCQQOBAJmIQ3/bFIbDysEGyQIPlUrADCYR+CYZv92QboBFw8Irm4CLR0Gilc1EQdVGwqNLRGpNhWzUEVYKCKZMROfSD5BFQhFHxtmLihNGQp4Jw99NzAuFjdGH0ptMXSbQ5jAUqyZRU+SOyyPSUeTXGOUdYeVi6eVmbxvgaJJY30zPU4aKzlYMYwAYIQAjrxjNpsQcZeBR8sHM0Q5H1oBTGNMKnktPmsygsE0nd0OCBcCEBc3tf8QJSUZQTtZdaEFXToGdkoDSi8HnGOWL+1RAAAEiElEQVR4nO3YaVPaUBQGYMJiQ2ssNklFggoqFtQKooJLW7WbXaxVkLp0oQvI//8HTRA3SHJfhpObzJj3MzM8c+7JXU4g4MePHz9+/Pjx4+feJ7OyulZKDJskIZmmPLY+lXGUNLGRCE1OjpjmwZBgEkWPIG1OOUcqhUZGQlYxR13Zyg6xNkKTliIWSlCETQdIWynrIgEoPdILatOrGYaJjVLS67SmVaaJjdJZpKottglBCWnCFZxm9ROKEqRpMlTJ9rPrB6WUqUxzAAlECcpLIlQCWDwYJdGYXiGLh6KovkCsUDCKpKsmZiATihLSFKfgNmaCUcIOAaqErR6MUihOZrCl8EoRfH8Z4ITpD5Ue/CI6O4OZ+kDNDoyaBk04Shj8/PMkypPLl0GuLf2hCF5c1FsCyTmz4cXNE7tNcT5mMjO0KIqWAi/DnK8ugS3S+5RA9KDB7gkgiurlsEVYKbqX3xrdE2uHyoRtoAiK6i3TTibFrhUyS5BIZ3or7BOQjVIk4snZ9DCrVuxREOEgoZNMyWa0iKCUshPz2LnUpB2LMV6UqIYIXclsp2wmsTYoRSc5OLae20iFnlhkSLkbYeiZHp0qbTpUpevsvn7z9qlZ3r0fu5W9vQ8fP33e39//cvD10GHS0ZIYHB8PmkUcvf3DSlWT47KRuKxVK86JsseiBagLdVjTInLkJrKs1XLOmI5Ea9EdVEWLR7oT15yoVvabLekGlav2ktrlqpIXa9S+TDeonCabmoxindCaTpmmDurE0qTXSpunNO2yTR2UjclQUa4gq5+uUbYmQ0VnOgZMbVTN3qT3VY3KdIqYDNSh+Xd3p1ZUbbWEoqqsQhkbA40JK5SOOmOSjAWkKRVWqKC4ABSKqlRZETLpKMQUiZBsC+eYKSh+Z7d5OxSHILQf6Fn8gVVKptgVkI2zjfqJFYqiqX6BLRUUf4MorT44CiwUjIpEBu/0LGgKPr/vKLinPIni2ejoKcN1S/Dm5unJYwZtKnEBM1G0lDevLoFR2kse0ePPi9dh/OGQA1Bk71EvPrH6eIwyFpBs8Yxk0Wd7nfFsJx3qsYcu0ICDeOzSxyjIamMnHwXpK8jaGK4neVXZrFiyA0MzPefeGy8aORKD0CC2XukZxFZITjzznC8ZA+KHZlnsHlnHr+LoyLqdP38P/j02TdfnXs/N12rVWu0s52CR2mm0CuHkI9OEYw7/t3nyzaiqqmGLRF1BNQpJS5FLqHzLukhuofIFe5IbqFiUZXIBxayTCyjAxB3VTLJNvFExgMQdVQQWjzcqBpk4o4pIR3FG5aOQiS+qgZn4orA254xqeRCVZ596bqAwE18UaPJR+PIt80ShjZ7nh0K3BLXA0YRunmqRJ6qBrV7ygicK7HSVpwlsKrXFF4Vd8riuXgAqFd9vz8gFsHocd85OmBdivvvBZViDBP6LZ8R+lKCG+S8eS6VGeX95bJXqzgivnWWLvlILPG8HPWmGe1lquOkmyUgxemfEqKrRoqtlusxys6Am1cskw4WmO1+dSWLNYqvVKjbda28/fvzcr/wHzOXQheMk7gcAAAAASUVORK5CYII=">
+            <p>figma</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- PROJECTS -->
+<section class="projects" id="projects">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="project-card" data-aos="zoom-in">
+        <img src="blood.png" class="project-img" alt="Blood Donation System">
+        <h3>Blood Donation Management System</h3>
+        <p>Real-time donor tracking, JWT authentication, and blood bank management system.</p>
+        <div class="tech-tags">
+            <span>MongoDB</span>
+            <span>Express</span>
+            <span>React</span>
+            <span>Node.js</span>
+        </div>
+        <div class="project-buttons">
+            <a href="https://blood-donation-front-end.onrender.com" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/Aniket862003/Blood-Donation-System" target="_blank" class="project-btn">GitHub</a>
+        </div>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+        <img src="food.png" class="project-img" alt="Food Delivery App">
+        <h3>Food Delivery Application</h3>
+        <p>Browse restaurants, place orders, and track deliveries in real-time.</p>
+        <div class="tech-tags">
+            <span>MongoDB</span>
+            <span>Express</span>
+            <span>React</span>
+            <span>Node.js</span>
+        </div>
+        <div class="project-buttons">
+            <a href="https://foodweb-frontend-632.onrender.com" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/Aniket862003/Food-Delivery-App" target="_blank" class="project-btn">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<br>
+    <!-- CONTACT -->
+    <!-- <section class="contact" id="contact">
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <form data-aos="fade-up">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section> -->
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Aniket Darekar</p>
+    </footer>
+
+    <!-- TYPING JS -->
+    <script src="script.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+</html>
