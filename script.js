@@ -41,3 +41,27 @@ menuToggle.addEventListener("click", () => {
 });
 
 
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("visible");
+//       }
+//     });
+//   }, { threshold: 0.2 });
+
+//   document.querySelectorAll(".skill-card").forEach((card) => {
+//     observer.observe(card);
+//   });
+
+
+  // Fade-up animation for skill cards
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll(".skill-card").forEach(card => observer.observe(card));
+
