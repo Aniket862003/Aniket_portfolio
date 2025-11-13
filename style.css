@@ -365,3 +365,113 @@ footer{
         font-size: 26px;
     }
 }
+
+
+/* EDUCATION SECTION */
+.education {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.education h2 {
+  font-size: 42px;
+  color: #00d9ff;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.education h2:hover {
+  transform: translateY(-8px);
+}
+
+.edu-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+/* Vertical Line */
+.edu-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 217, 255, 0.5);
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* Each Card */
+.edu-card {
+  background: #161b22;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 45%;
+  position: relative;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 20px rgba(0, 217, 255, 0.08);
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  border-color: #00d9ff;
+  box-shadow: 0 10px 25px rgba(0, 217, 255, 0.15);
+}
+
+/* Left and Right Alternation */
+.edu-card:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.edu-card:nth-child(even) {
+  align-self: flex-end;
+}
+
+.edu-year {
+  color: #00d9ff;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.edu-card h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.edu-card p {
+  color: #ccc;
+  font-size: 16px;
+}
+
+.edu-card span {
+  font-size: 15px;
+  color: #00d9ff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .edu-container {
+    width: 90%;
+  }
+
+  .edu-container::before {
+    left: 6px;
+  }
+
+  .edu-card {
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .edu-card:nth-child(even) {
+    align-self: flex-start;
+  }
+}
